@@ -9,9 +9,9 @@ export function App() {
   return (
     <>
     <h1>Hello World!</h1>
-    {carditems.map(item=> (
+    {carditems.map((item,index)=> (
           <Card
-          header={item.header}
+          header={index + ". " + item.header}
           title={item.title}
           description={item.description}
           buttontext={item.buttontext} >
