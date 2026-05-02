@@ -8,7 +8,9 @@ function Card(cardProp : CardProp) {
     {cardProp.header}
   </div>
   <div className="card-body">
-    <h5 className="card-title">{cardProp.title}</h5>
+    { cardProp.hastitle &&
+        <h5 className="card-title">{cardProp.title}</h5>
+    }
     <p className="card-text">{cardProp.description}</p>
     <a href="#" className="btn btn-primary">{cardProp.buttontext}</a>
   </div>

@@ -3,4 +3,5 @@ export type CardProp = {
     header:string;
     description:string;
     buttontext:string;
+    hastitle:boolean;
 }
